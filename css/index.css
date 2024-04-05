@@ -1,0 +1,283 @@
+/*** ******************
+    Main body
+******************* ***/
+.main{
+    margin: 50px 10% 0 10%;
+}
+
+.main h1{
+    padding: 30px 0 10px ;
+    background-image: linear-gradient(to right, #fc00ff, #00dbde);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+P{
+    font-size: 20px;
+}
+
+.main p{
+    padding: 0 20px 0;
+    text-indent: 80px;
+}
+
+/*** ******************
+        UPCOMING EVENTS
+******************* ***/
+
+.upcoming-event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upcoming-event h1{
+    width: 85%;
+    color: #00FFFF;
+    margin: 15px 0 20px 10px;
+}
+
+.slide-show {
+    width: 60%;
+    height: 350px;
+    display: flex;
+    overflow: hidden;
+    position: relative; 
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.slide,.slides{
+    width: 100%;
+    flex: 0 0 auto;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.slide img,.slides img{
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+}
+
+.text {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.slide:hover .text,.slides:hover .text{
+    opacity: 0.8;
+}
+
+.slide-show p{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ width: 50px;
+ font-size: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ border-radius: 50%;
+ background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-show p:first-child{
+   right: 10px;
+}
+
+.slide-show p:last-child{
+    right: 10px;
+}
+
+/*** ******************
+    About us
+******************* ***/
+.about-us h1{
+    width: 80%;
+    color: #00FFFF;
+    margin: 40px 0 10px 10%;
+}
+
+.about-us p{
+    margin-left: 10%;
+    width: 80%;
+    text-indent: 60px;
+    color: #ADB2F5;
+    margin-bottom: 20px;
+}
+
+/*** ******************
+    CONTACT US
+******************* ***/
+.contact-us h1{
+    margin: 10px 0 0 10%;
+}
+
+.contact-us P{
+    margin: 20px 0 10px 14%;
+    color: #e38c28;
+    font-weight: 500;
+}
+
+.site-icons{
+    width: 60%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.site-icons i{
+    margin: 20px;
+}
+
+.insta:hover{
+    transform: scale(1.2);
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80, #ffeb80, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linkedin:hover{
+    transform: scale(1.2);
+    background: linear-gradient(45deg, #0077B5, #0077B5, #0077B5, #0077B5, #0077B5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.whatsapp:hover{
+    transform: scale(1.2);
+    background: linear-gradient(45deg, #25D366, #25D366, #25D366, #25D366, #25D366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.additional{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    gap: 20px;
+}
+
+.card{
+    width: 300px;
+    min-height: 160px;
+    border-radius: 25px; 
+    background: linear-gradient(to right, black, #0b0a08);
+    text-align: center;
+    border: 2px solid #201658;
+}
+.more{
+    width: 300px;
+    min-height: 160px;
+    border-radius: 25px; 
+    background: linear-gradient(to right, black, #0b0a08);
+    text-align: center;
+    border: 2px solid #201658;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+}
+
+.more i{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1a1916;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.more p{
+    padding-top: 10px;
+    letter-spacing: 3px;
+}
+.more i:hover{
+    color: #1a1916;
+    background-color: #fff;
+}
+.card h2{
+    margin: 20px;
+    color: #ff0909;
+}
+
+.card p{
+    margin: 0 20px 5px ;
+    text-indent: 30px;
+}
+
+.card h4{
+    text-align: center;
+    margin: 25px 0;
+}
+
+h4 a{
+    max-width: 120px;
+    padding: 8px 15px;
+    border-radius: 18px;
+    font-weight: 600;
+}
+
+h4 a:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+.card:hover{
+    scale: 1.02;
+    box-shadow: 0 0 8px 3px rgb(255,255,255,.5);
+}
+
+
+/* BREAK POINTS */
+@media (max-width:992px){
+    .header{
+        padding: 0 0 0 20px;
+    }
+}
+
+@media (max-width:992px){
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 16px;
+
+    }
+
+    .upcoming-event p{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .slide-show{
+        width: 90%;
+        height: 300px;
+    }
+
+    .slide-show p{
+        font-size: 18px;
+        padding: 5px;
+        width: 28px;
+    }
+}
